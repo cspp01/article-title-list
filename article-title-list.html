@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #vvv{
+            width:80%;
+            background:lightsalmon;
+        }
+        #cc-content-title{
+            width:20%;
+            position:fixed;
+            right:0;
+            top:0;
+            background:lightseagreen;
+            font-size:14px;
+        }
+        #cc-content-title h1{
+            text-align:center;
+            font-size:15px;
+        }
+        #cc-content-title h2,
+        #cc-content-title h3,
+        #cc-content-title h4,
+        #cc-content-title h5,
+        #cc-content-title h6{
+            cursor:pointer;
+            font-size:14px;
+            margin:5px 0;
+        }
+        #cc-content-title h2:before,
+        #cc-content-title h3:before,
+        #cc-content-title h4:before,
+        #cc-content-title h5:before,
+        #cc-content-title h6:before{
+            content:'';
+            display:inline-block;
+            width:7px;
+            height:7px;
+            vertical-align:middle;
+            margin-right:10px;
+            border-radius:50%;
+        }
+        #cc-content-title h2:before{
+            background:blue;
+        }
+        #cc-content-title h3:before{
+            background:yellow;
+        }
+        #cc-content-title h4:before{
+            background:lightsalmon;
+        }
+        #cc-content-title h5:before{
+            background:lightblue;
+        }
+        #cc-content-title h6:before{
+            background:gold;
+        }
+    </style>
+</head>
+<body>
+<!--<div id="vvv">
+    <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
+        <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/12/hexo个人博客搭建/">
+
+        <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75">
+    </span>
+
+        <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cc">
+    </span>
+
+
+        <header class="post-header">
+
+
+
+            <h1 class="post-title" itemprop="name headline">
+
+
+
+                hexo个人博客搭建
+
+
+            </h1>
+
+
+            <div class="post-meta">
+          <span class="post-time">
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-12T08:15:23+08:00">
+                2017-03-12
+              </time>
+
+
+
+
+
+          </span>
+
+
+                <span class="post-category">
+
+              <span class="post-meta-divider">|</span>
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">In</span>
+
+
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo博客搭建</span>
+                  </a>
+                </span>
+
+
+
+
+            </span>
+
+
+
+
+                <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/03/12/hexo个人博客搭建/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount">0</span>
+                </a>
+              </span>
+
+
+
+
+
+                <span id="/2017/03/12/hexo个人博客搭建/" class="leancloud_visitors" data-flag-title="hexo个人博客搭建">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+
+                 <span class="post-meta-item-text">Visitors </span>
+
+                 <span class="leancloud-visitors-count">11</span>
+             </span>
+
+
+
+
+
+
+
+
+            </div>
+        </header>
+
+
+
+        <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+            <h3 id="叨的叨叨以叨叨，那是什么叨"><a href="#叨的叨叨以叨叨，那是什么叨" class="headerlink" title="叨的叨叨以叨叨，那是什么叨"></a>叨的叨叨以叨叨，那是什么叨</h3><p>该说啥呢。。。博客不是第一次写，但在自己搭建的博客上写文章的确是第一次。十分兴奋。看着自己辛苦搭建出来的博客，一点一点达到自己心目中的样子，这种感觉只有做过的人才可以体会到。如果你还在犹豫，那就别墨迹了。废话不多说。<br>搭建自己的博客，当时我查的时候好多人推荐用Wordpress，既然这么多人推荐，那我就不用，怎么滴。好吧被看穿了，其实是我太穷了，没钱租服务器。虽然好像也可以免费做出来，这个不太清楚，因为没太了解。就在我茶不思饭不想的时候，我发现了Hexo，这个真是太符合我了。利用github来部署静态博客，谁叫咱们就是干前端的呢。啥也不说了，立马开干。 </p>
+            <h3 id="适合人群"><a href="#适合人群" class="headerlink" title="适合人群"></a>适合人群</h3><p>哈哈你来看这篇文章说明你就适合<br>使用windows的你们（其他系统差不多）</p>
+            <h3 id="安装必要程序"><a href="#安装必要程序" class="headerlink" title="安装必要程序"></a>安装必要程序</h3><h4 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h4><p>到<a href="https://git-for-windows.github.io/" target="_blank" rel="external"> msysgit</a>下载好后， 下一步下一步执行安装即可。<br>什么，下载太慢了，我含泪告诉你人这一生不翻几次墙是干不了大事的。</p>
+            <h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p>到<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>下载，左边稳定版，右边最新版，根据需要下载。推荐稳定版。安装的话，下一步还得下一步 非常简单。</p>
+            <h4 id="安装Hexo（我才是主人翁）"><a href="#安装Hexo（我才是主人翁）" class="headerlink" title="安装Hexo（我才是主人翁）"></a>安装Hexo（我才是主人翁）</h4><p>终于到我隆重出场了，鼠标右键任意位置，选择Git bash Here，输入npm 命令即可安装。<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo -g</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>好吧，我叫特简单。文件一般会安装到C:\Users\Administrator\AppData\Roaming\npm\node_modules下可通过下边npm命令具体查看：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm root -g</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>安装好了就可以随便找个你喜欢的位置建个名叫hexo的文件夹，在这个文件夹里右键选择Git bash Here，分别输入hexo init和npm install（初始化文件和安装依赖包）：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></tbody></table></figure><p></p>
+            <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></tbody></table></figure>
+            <p>好了你应该已经看见效果了。接下来我们就要在网页中查看了，本地预览。分别输入g和s（生成静态网页和本地预览）：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></tbody></table></figure><p></p>
+            <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div></pre></td></tr></tbody></table></figure>
+            <p>上面的g和s其实generate和server的缩写，但是写缩写就够了，效果一样。如果出现<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div><div class="line">INFO  Start processing</div><div class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>哈哈你成功了，下一步在网页中打开localhost:4000就可以看到网页了，兴奋兴奋呀。现在本地已经OK了。下来我们要把它发布到网上让世界人民来观摩。</p>
+            <h3 id="注册github来部署博客"><a href="#注册github来部署博客" class="headerlink" title="注册github来部署博客"></a>注册github来部署博客</h3><h4 id="注册github"><a href="#注册github" class="headerlink" title="注册github"></a>注册<a href="https://github.com/" target="_blank" rel="external">github</a></h4><p>github应该很多人已经注册或正在注册的路上。我就不多说啥了。</p>
+            <h4 id="创建页面仓库"><a href="#创建页面仓库" class="headerlink" title="创建页面仓库"></a>创建页面仓库</h4><p><a href="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417212627.png" class="fancybox fancybox.image" rel="group"><img src="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417212627.png" alt="Alt text"></a><br>选择New repository<br><a href="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417212833.png" class="fancybox fancybox.image" rel="group"><img src="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417212833.png" alt="Alt text"></a><br>Repositoryname输入：你的账号名字.github.io，如（cspp01.github.io）。Description输入描述，最下面的选框Initialize this repository with a README可选可不选，建议选上。点击Create。好了，你在网上存放博客的地方也见好了。</p>
+            <h4 id="SSH密钥"><a href="#SSH密钥" class="headerlink" title="SSH密钥"></a>SSH密钥</h4><h5 id="生成SSH密钥"><a href="#生成SSH密钥" class="headerlink" title="生成SSH密钥"></a>生成SSH密钥</h5><p>还是右键点击Git base Here输入<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ssh-keygen -t rsa -C <span class="string">"你的邮箱地址"</span></div></pre></td></tr></tbody></table></figure><p></p>
+            <p>按回车，按回车，按回车，你得按3边，成功，到C:\Users\Administrator.ssh下，可以看到两个文件，id_rsa是密钥 ，id_rsa.pub是公钥。</p>
+            <h5 id="建立连接"><a href="#建立连接" class="headerlink" title="建立连接"></a>建立连接</h5><p>回到github选择setting-&gt;SSH and GPG keys-&gt;右上角New SSH key<br><a href="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417214638.png" class="fancybox fancybox.image" rel="group"><img src="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417214638.png" alt="Alt text"></a><br><a href="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417214722.jpg" class="fancybox fancybox.image" rel="group"><img src="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417214722.jpg" alt="Alt text"></a><br><a href="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417215217.png" class="fancybox fancybox.image" rel="group"><img src="http://ooa3lxrpg.bkt.clouddn.com/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20170417215217.png" alt="Alt text"></a><br>title随便了，最好有意义点。打开刚才的id_rsa.pub，Ctrl+a-&gt;Ctrl+c，粘贴到key，Add SSH key，OK。</p>
+            <h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><h4 id="config-yml配置文件"><a href="#config-yml配置文件" class="headerlink" title="_config.yml配置文件"></a>_config.yml配置文件</h4><p>这个文件在hexo根目录下，打开_config.yml配置文件，找到下面（在最下面）修改为：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  <span class="built_in">type</span>: git</div><div class="line">  repo: 仓库地址</div><div class="line">  branch: master</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>注意repo是你刚才新建的仓库的地址,复制粘贴上去就好OK了。还有注意冒号后面的空格必须。</p>
+            <h4 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div></pre></td></tr></tbody></table></figure>
+            <figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo d</div></pre></td></tr></tbody></table></figure>
+            <p>最后出现<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Deploy <span class="keyword">done</span>: git</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>说明成功<br>如果在执行 hexo d 后,出现的错误<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">error deployer not found:git</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>请再次输入<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git &#45;&#45;save</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>然后再次执行<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>应该就可以了，如果还失败。请重新安装hexo重新部署。我第一次就是不管怎么样操作都部署失败，后来重新安装了一下就好了。就是这么神奇。<br>最后在浏览器输入你刚才新建仓库的名字：你的用户名.github.io（如cspp01.github.io）就可以访问了。<br>是不是很酷。</p>
+            <h3 id="写博客"><a href="#写博客" class="headerlink" title="写博客"></a>写博客</h3><p>你的博客文章都放在 source \ _posts 下，你如果要写新博客文章的话，可以手动在这个文件夹下创建.md文件。也可以通过命令创建：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"你的文章名字"</span></div></pre></td></tr></tbody></table></figure><p></p>
+            <p>然后再在你建好的.md文件里编辑文章。文章运用的是Markdowm（Markdown 是一种用来写作的轻量级「标记语言」）,还是很简单很好用的，其实你仿照hello world的那篇文章来写就可以。</p>
+            <h4 id="文章中加图片"><a href="#文章中加图片" class="headerlink" title="文章中加图片"></a>文章中加图片</h4><p>加图片可以先把图片上传到云端，推荐<a href="href=&quot;https://www.qiniu.com/&quot;">七牛</a>，然后在文章中加入了。<br>建好，编辑完，先在本地调试预览，在通过命令上传：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo s &#45;&#45;debug</div><div class="line">$ hexo d</div></pre></td></tr></tbody></table></figure><p></p>
+            <p>好了，现在你新写的文章也上传上去了。上传上去立马刷新可能还不会作用到是因为会有一丝丝延迟，再刷新下就会好了。本地调试好后要上传记得每次都（每次上传最好先claer）：<br></p><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></tbody></table></figure><p></p>
+            <h3 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">hexo 安装</div><div class="line">$ hexo install hexo -g(安装hexo)</div><div class="line">$ hexo init(初始化)</div><div class="line">$ npm install(安装依赖包)</div><div class="line"></div><div class="line">服务器</div><div class="line">$ hexo s(开启本地服务，本地预览)</div><div class="line">$ hexo s &#45;&#45;debug(以调试模式启动，对文件的更改无需停止网站只需刷新即可看到效果)</div><div class="line">$ hexo s -p 5000(更改端口)</div><div class="line"></div><div class="line">$ hexo clean(清除缓存)</div><div class="line">$ hexo d(上传部署)</div><div class="line"></div><div class="line">本地文件</div><div class="line">$ hexo g(重新生成本地文件)</div><div class="line"></div><div class="line">编辑文章</div><div class="line">$ hexo new <span class="string">"page"</span> (新建文章)</div></pre></td></tr></tbody></table></figure>
+            <p>这篇就到这里，下篇我们介绍怎么设置主题，和一些样式的修改自定义。</p>
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <div>
+
+
+            <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <div>我是来打家劫舍的，还不快速速交出银两。</div>
+                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                    <span>赏</span>
+                </button>
+                <div id="QR" style="display: none;">
+
+                    <div id="wechat" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="wechat_qr" src="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" alt="cc WeChat Pay"></a>
+                        <p>微信打赏</p>
+                    </div>
+
+
+                    <div id="alipay" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="alipay_qr" src="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" alt="cc Alipay"></a>
+                        <p>支付宝打赏</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <footer class="post-footer">
+
+            <div class="post-tags">
+
+                <a href="/tags/hexo/" rel="tag"># hexo</a>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="post-nav">
+                <div class="post-nav-next post-nav-item">
+
+                    <a href="/2017/03/14/hexo主题配置和修改样式/" rel="next" title="hexo的next主题配置和优化">
+                        <i class="fa fa-chevron-left"></i> hexo的next主题配置和优化
+                    </a>
+
+                </div>
+
+                <span class="post-nav-divider"></span>
+
+                <div class="post-nav-prev post-nav-item">
+
+                    <a href="/2017/03/01/hello-world/" rel="prev" title="Hello World">
+                        Hello World <i class="fa fa-chevron-right"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+
+        </footer>
+    </article>
+</div>-->
+<div id="vvv">
+    <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
+        <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/01/hello-world/">
+
+        <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75">
+    </span>
+
+        <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cc">
+    </span>
+
+
+        <header class="post-header">
+
+
+
+            <h1 class="post-title" itemprop="name headline">
+
+
+
+                Hello World
+
+
+            </h1>
+
+
+            <div class="post-meta">
+          <span class="post-time">
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-01T08:15:23+08:00">
+                2017-03-01
+              </time>
+
+
+
+
+
+          </span>
+
+
+                <span class="post-category">
+
+              <span class="post-meta-divider">|</span>
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">In</span>
+
+
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo博客搭建</span>
+                  </a>
+                </span>
+
+
+
+
+            </span>
+
+
+
+
+                <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/03/01/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount">0</span>
+                </a>
+              </span>
+
+
+
+
+
+                <span id="/2017/03/01/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+
+                 <span class="post-meta-item-text">Visitors </span>
+
+                 <span class="leancloud-visitors-count">1</span>
+             </span>
+
+
+
+
+
+
+
+
+            </div>
+        </header>
+
+
+
+        <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+            <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+            <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+            <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <div>
+
+
+            <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <div>我是来打家劫舍的，还不快速速交出银两。</div>
+                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                    <span>赏</span>
+                </button>
+                <div id="QR" style="display: none;">
+
+                    <div id="wechat" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="wechat_qr" src="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" alt="cc WeChat Pay"></a>
+                        <p>微信打赏</p>
+                    </div>
+
+
+                    <div id="alipay" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="alipay_qr" src="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" alt="cc Alipay"></a>
+                        <p>支付宝打赏</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <footer class="post-footer">
+
+            <div class="post-tags">
+
+                <a href="/tags/hexo/" rel="tag"># hexo</a>
+
+                <a href="/tags/next/" rel="tag"># next</a>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="post-nav">
+                <div class="post-nav-next post-nav-item">
+
+                    <a href="/2017/03/12/hexo个人博客搭建/" rel="next" title="hexo个人博客搭建">
+                        <i class="fa fa-chevron-left"></i> hexo个人博客搭建
+                    </a>
+
+                </div>
+
+                <span class="post-nav-divider"></span>
+
+                <div class="post-nav-prev post-nav-item">
+
+                </div>
+            </div>
+
+
+
+
+        </footer>
+    </article>
+    <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
+        <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/01/hello-world/">
+
+        <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="cc">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75">
+    </span>
+
+        <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cc">
+    </span>
+
+
+        <header class="post-header">
+
+
+            
+
+
+            <div class="post-meta">
+          <span class="post-time">
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-01T08:15:23+08:00">
+                2017-03-01
+              </time>
+
+
+
+
+
+          </span>
+
+
+                <span class="post-category">
+
+              <span class="post-meta-divider">|</span>
+
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+
+                <span class="post-meta-item-text">In</span>
+
+
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo博客搭建/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo博客搭建</span>
+                  </a>
+                </span>
+
+
+
+
+            </span>
+
+
+
+
+                <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a class="cloud-tie-join-count" href="/2017/03/01/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count join-count" itemprop="commentCount">0</span>
+                </a>
+              </span>
+
+
+
+
+
+                <span id="/2017/03/01/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+
+                 <span class="post-meta-item-text">Visitors </span>
+
+                 <span class="leancloud-visitors-count">1</span>
+             </span>
+
+
+
+
+
+
+
+
+            </div>
+        </header>
+
+
+
+        <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+            <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+            <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+            <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></tbody></table></figure>
+            <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <div>
+
+
+            <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+                <div>我是来打家劫舍的，还不快速速交出银两。</div>
+                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+                    <span>赏</span>
+                </button>
+                <div id="QR" style="display: none;">
+
+                    <div id="wechat" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="wechat_qr" src="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" alt="cc WeChat Pay"></a>
+                        <p>微信打赏</p>
+                    </div>
+
+
+                    <div id="alipay" style="display: inline-block">
+                        <a href="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="alipay_qr" src="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" alt="cc Alipay"></a>
+                        <p>支付宝打赏</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div>
+
+
+
+
+        </div>
+
+        <footer class="post-footer">
+
+            <div class="post-tags">
+
+                <a href="/tags/hexo/" rel="tag"># hexo</a>
+
+                <a href="/tags/next/" rel="tag"># next</a>
+
+            </div>
+
+
+
+
+
+
+
+            <div class="post-nav">
+                <div class="post-nav-next post-nav-item">
+
+                    <a href="/2017/03/12/hexo个人博客搭建/" rel="next" title="hexo个人博客搭建">
+                        <i class="fa fa-chevron-left"></i> hexo个人博客搭建
+                    </a>
+
+                </div>
+
+                <span class="post-nav-divider"></span>
+
+                <div class="post-nav-prev post-nav-item">
+
+                </div>
+            </div>
+
+
+
+
+        </footer>
+    </article>
+</div>
+<div id="cc-content-title"></div>
+</body>
+<script>
+    window.onload=function(){
+        var tit=new GetTitle();
+        tit.__init();
+    };
+    function GetTitle(){
+        this.__warehouse=document.getElementById('cc-content-title');
+        this.__content=document.getElementById('vvv');
+        this.__hs=null;//所有__warehouse中的标题节点
+        this.__cHs=[];//所有文章中的标题节点
+        this.__cHsDistance=[];//所有文章中的标题节点离顶端的距离
+        this.__hierarchy=[];//层级
+        this.__maxScroll=document.documentElement.offsetHeight-document.documentElement.clientHeight;//最大滚动距离
+    }
+    GetTitle.prototype={
+        //初始化
+        '__init':function(){
+            this.__getH();
+            this.__setHStyle();
+            this.__setClick(this);
+            this.__setScrollEven(this);
+            if(this.__maxScroll<=0){
+                for(var i=0;i<this.__hs.length;i++){
+                    this.__hs[i].style.display='block';
+                }
+            }
+        },
+        //获取到标题
+        '__getH':function(){
+            //思路：先取得文章的所有内容（包括标签），然后把所有换行去掉，在在</h>后面加上换行，最后同过正则reg获得所有h的集合
+            var removen=/\n/ig;//过滤掉换行
+            var replacens=[/<\/h1>/ig,/<\/h2>/ig,/<\/h3>/ig,/<\/h4>/ig,/<\/h5>/ig,/<\/h6>/ig];//后面加换行
+            var removeId=/(id="[^<]+"|<a[^<]+>|<\/a>)/ig;//过滤除了h标签和标题之外的所有字符串
+            var reg=/<h[1-6][^<]{0,}>(.)+<\/h[1-6]>/ig;//找到h标签
+            var hStr=this.__content.innerHTML.replace(removen,'');
+            //</h>后加换行
+            for(var i=0;i<6;i++){
+                hStr=hStr.replace(replacens[i],'</h'+(i+1)+'>\n')
+            }
+            this.__warehouse.innerHTML=hStr.match(reg).join('').replace(removeId,'');
+        },
+        //设置标题层级
+        '__setHStyle':function(){
+            var wTags=this.__hs=this.__warehouse.getElementsByTagName('*');
+            var ifH=[false,false,false,false,false,false];//设置h1-h6的状态，初始为false,代表获取的标签没有相应的标签
+            //循环所有标签拥有相应标签就把ifH的相应位置设为true
+            for(var i=0;i<wTags.length;i++){
+                switch(wTags[i].tagName.toLowerCase()){
+                    case 'h1':ifH[0]=true;
+                        break;
+                    case 'h2':ifH[1]=true;
+                        break;
+                    case 'h3':ifH[2]=true;
+                        break;
+                    case 'h4':ifH[3]=true;
+                        break;
+                    case 'h5':ifH[4]=true;
+                        break;
+                    case 'h6':ifH[5]=true;
+                        break;
+                }
+            }
+            //获取到有哪些h标签,存到数组,主要用来表示层级，数组下标0的位置存放的h标签表示第一级
+            for(var j=0;j<ifH.length;j++){
+                if(ifH[j]){
+                    this.__hierarchy.push(j+1);
+                }
+            }
+            var hs=this.__hierarchy;
+            for(var b=0;b<wTags.length;b++) {
+                for (var a = 0; a < hs.length; a++) {//主要用来判断属于哪个层级
+                    if(wTags[b].tagName.indexOf(hs[a])!=-1){
+                        wTags[b].style.marginLeft=a*10+'px';
+                        if(a>1){
+                            wTags[b].style.display='none';
+                        }
+                    }
+                }
+            }
+        },
+        //设置标题滚动到位置的点击事件
+        '__setClick':function(__this){
+            var cTags=__this.__content.getElementsByTagName('*');
+            var whs=__this.__hs;
+            var regH=/^h[1-6]$/i;
+            //获取文章中所有标题节点
+            for(var j=0;j<cTags.length;j++){
+                var cTag=cTags[j].tagName;
+                if(cTag.search(regH)==0){
+                    __this.__cHs.push(cTags[j]);
+                }
+            }
+            //把标题在文章中的距离存储起来，方便下次使用
+            for(var a=0;a<__this.__cHs.length;a++){
+                __this.__cHsDistance.push(__this.__getDisRelativeBrowser(__this.__cHs[a]));
+            }
+            //添加点击事件
+            for(var i=0;i<whs.length;i++){
+                (function(i){
+                    whs[i].onclick=function(){
+                        var thi=this;
+                        var timer=setInterval(function(){
+                            __this.__setScrollTop(__this.__cHsDistance[i],timer);
+                        },20);
+                    }
+                })(i);
+            }
+
+        },
+        //设置滚动事件
+        '__setScrollEven':function(__this){
+            window.onscroll=function(){
+                var scrtop=document.documentElement.scrollTop||document.body.scrollTop;
+                var  chsdis=__this.__cHsDistance;//存储滚动距离
+                for(var i=0;i<chsdis.length;i++){
+                    if(chsdis[i]>=__this.__maxScroll){//假如滚动距离超过最大滚动距离那就设为最大
+                        chsdis[i]=__this.__maxScroll;
+                    }
+                    if(scrtop>=chsdis[i]){
+                        __this.__hs[i].style.display='block';//不加的话，如果滚动步长，速度太快o方法会有部分标签跳过不会执行
+                        var maxnum=i;//获得滚动到哪个h标签的下标，当前标签
+                    }else{
+                        var h=__this.__hs[i].tagName.substring(1,2);//获得h标签的数字1-6
+                        if(h!=__this.__hierarchy[1]){//除了第2级标签
+                            __this.__hs[i].style.display='none';
+                        }
+                    }
+                }
+                o(__this.__hs[maxnum]);
+                for(var a=0;a<chsdis.length;a++){
+                    __this.__hs[a].style.color='#333';
+                }
+                __this.__hs[maxnum].style.color='#fff';
+                //滚动结束查看他是否有子级或同级，有的话显示
+                function o(thi){
+                    if(thi.nextElementSibling){
+                        var ne=thi.nextElementSibling;
+                        if(thi.tagName<=ne.tagName){
+                            ne.style.display='block';
+                            while(ne.nextElementSibling.tagName==ne.tagName){
+                                ne.nextElementSibling.style.display='block';
+                                ne=ne.nextElementSibling;
+                            }
+                        }
+                    }
+                }
+                /*for(var j=0;j<chsdis.length;j++){
+                    if(scrtop-chsdis[j])
+                }*/
+            }
+        },
+        //获取元素顶端的距离
+        '__getDisRelativeBrowser':function(__do){
+            var dis=0;
+            while(__do.offsetParent){
+                dis+=__do.offsetTop;
+                __do=__do.offsetParent;
+            }
+            return dis;
+        },
+        //设置滚动
+        '__setScrollTop':function(num,tim){
+                var scrtop=document.documentElement.scrollTop||document.body.scrollTop;
+                var maxScrollTop=this.__maxScroll;
+                if(num>=maxScrollTop) num=maxScrollTop;
+                if(num>scrtop){
+                        addStep(200);
+                        scrtop>=num&&clear();
+                }else{
+                        addStep(-200);
+                        scrtop<=num&&clear();
+                }
+                function addStep(step){
+                    document.documentElement.scrollTop
+                        ?document.documentElement.scrollTop=document.documentElement.scrollTop+step
+                        :document.body.scrollTop=document.body.scrollTop+step;
+                    scrtop=document.documentElement.scrollTop||document.body.scrollTop;
+                }
+                function clear(){
+                    clearInterval(tim);
+                    document.documentElement.scrollTop
+                        ?document.documentElement.scrollTop=num
+                        :document.body.scrollTop=num;
+                }
+            }
+    }
+</script>
+</html>
