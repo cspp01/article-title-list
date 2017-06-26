@@ -4,67 +4,24 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-        }
         #vvv{
-            width:80%;
-            background:lightsalmon;
+            width:70%;
+            float:left;
         }
-        #cc-content-title{
-            width:20%;
-            position:fixed;
-            right:0;
-            top:0;
-            background:lightseagreen;
-            font-size:14px;
+        #p{
+            width:1000px;
+            margin:0 auto;
         }
-        #cc-content-title h1{
-            text-align:center;
-            font-size:15px;
-        }
-        #cc-content-title h2,
-        #cc-content-title h3,
-        #cc-content-title h4,
-        #cc-content-title h5,
-        #cc-content-title h6{
-            cursor:pointer;
-            font-size:14px;
-            margin:5px 0;
-        }
-        #cc-content-title h2:before,
-        #cc-content-title h3:before,
-        #cc-content-title h4:before,
-        #cc-content-title h5:before,
-        #cc-content-title h6:before{
-            content:'';
-            display:inline-block;
-            width:7px;
-            height:7px;
-            vertical-align:middle;
-            margin-right:10px;
-            border-radius:50%;
-        }
-        #cc-content-title h2:before{
-            background:blue;
-        }
-        #cc-content-title h3:before{
-            background:yellow;
-        }
-        #cc-content-title h4:before{
-            background:lightsalmon;
-        }
-        #cc-content-title h5:before{
-            background:lightblue;
-        }
-        #cc-content-title h6:before{
-            background:gold;
+        #warehouse{
+            width:30%;
+            float:left;
         }
     </style>
 </head>
 <body>
-<!--<div id="vvv">
+<div id="p">
+<div style="height:500px"></div>
+<div id="vvv">
     <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
         <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/12/hexo个人博客搭建/">
 
@@ -298,555 +255,308 @@
 
         </footer>
     </article>
-</div>-->
-<div id="vvv">
-    <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
-        <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/01/hello-world/">
-
-        <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="cc">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75">
-    </span>
-
-        <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cc">
-    </span>
-
-
-        <header class="post-header">
-
-
-
-            <h1 class="post-title" itemprop="name headline">
-
-
-
-                Hello World
-
-
-            </h1>
-
-
-            <div class="post-meta">
-          <span class="post-time">
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-01T08:15:23+08:00">
-                2017-03-01
-              </time>
-
-
-
-
-
-          </span>
-
-
-                <span class="post-category">
-
-              <span class="post-meta-divider">|</span>
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">In</span>
-
-
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo博客搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo博客搭建</span>
-                  </a>
-                </span>
-
-
-
-
-            </span>
-
-
-
-
-                <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a class="cloud-tie-join-count" href="/2017/03/01/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count join-count" itemprop="commentCount">0</span>
-                </a>
-              </span>
-
-
-
-
-
-                <span id="/2017/03/01/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-
-                 <span class="post-meta-item-text">Visitors </span>
-
-                 <span class="leancloud-visitors-count">1</span>
-             </span>
-
-
-
-
-
-
-
-
-            </div>
-        </header>
-
-
-
-        <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-            <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-            <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-            <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-
-        </div>
-
-        <div>
-
-
-
-
-        </div>
-
-        <div>
-
-
-            <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                <div>我是来打家劫舍的，还不快速速交出银两。</div>
-                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                    <span>赏</span>
-                </button>
-                <div id="QR" style="display: none;">
-
-                    <div id="wechat" style="display: inline-block">
-                        <a href="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="wechat_qr" src="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" alt="cc WeChat Pay"></a>
-                        <p>微信打赏</p>
-                    </div>
-
-
-                    <div id="alipay" style="display: inline-block">
-                        <a href="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="alipay_qr" src="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" alt="cc Alipay"></a>
-                        <p>支付宝打赏</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div>
-
-
-
-
-        </div>
-
-        <footer class="post-footer">
-
-            <div class="post-tags">
-
-                <a href="/tags/hexo/" rel="tag"># hexo</a>
-
-                <a href="/tags/next/" rel="tag"># next</a>
-
-            </div>
-
-
-
-
-
-
-
-            <div class="post-nav">
-                <div class="post-nav-next post-nav-item">
-
-                    <a href="/2017/03/12/hexo个人博客搭建/" rel="next" title="hexo个人博客搭建">
-                        <i class="fa fa-chevron-left"></i> hexo个人博客搭建
-                    </a>
-
-                </div>
-
-                <span class="post-nav-divider"></span>
-
-                <div class="post-nav-prev post-nav-item">
-
-                </div>
-            </div>
-
-
-
-
-        </footer>
-    </article>
-    <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article" style="opacity: 1; display: block; transform: translateY(0px);">
-        <link itemprop="mainEntityOfPage" href="http://www.ccblog.win/2017/03/01/hello-world/">
-
-        <span hidden="" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="cc">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://ooa3lxrpg.bkt.clouddn.com/b.jpg?imageView2/1/w/120/h/120/q/75">
-    </span>
-
-        <span hidden="" itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cc">
-    </span>
-
-
-        <header class="post-header">
-
-
-            
-
-
-            <div class="post-meta">
-          <span class="post-time">
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-01T08:15:23+08:00">
-                2017-03-01
-              </time>
-
-
-
-
-
-          </span>
-
-
-                <span class="post-category">
-
-              <span class="post-meta-divider">|</span>
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">In</span>
-
-
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo博客搭建/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo博客搭建</span>
-                  </a>
-                </span>
-
-
-
-
-            </span>
-
-
-
-
-                <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a class="cloud-tie-join-count" href="/2017/03/01/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count join-count" itemprop="commentCount">0</span>
-                </a>
-              </span>
-
-
-
-
-
-                <span id="/2017/03/01/hello-world/" class="leancloud_visitors" data-flag-title="Hello World">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-
-                 <span class="post-meta-item-text">Visitors </span>
-
-                 <span class="leancloud-visitors-count">1</span>
-             </span>
-
-
-
-
-
-
-
-
-            </div>
-        </header>
-
-
-
-        <div class="post-body" itemprop="articleBody">
-
-
-
-
-
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-            <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-            <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-            <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-            <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></tbody></table></figure>
-            <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-
-        </div>
-
-        <div>
-
-
-
-
-        </div>
-
-        <div>
-
-
-            <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
-                <div>我是来打家劫舍的，还不快速速交出银两。</div>
-                <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
-                    <span>赏</span>
-                </button>
-                <div id="QR" style="display: none;">
-
-                    <div id="wechat" style="display: inline-block">
-                        <a href="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="wechat_qr" src="http://ooa3lxrpg.bkt.clouddn.com/wx.jpg?imageView2/2/w/180" alt="cc WeChat Pay"></a>
-                        <p>微信打赏</p>
-                    </div>
-
-
-                    <div id="alipay" style="display: inline-block">
-                        <a href="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" class="fancybox fancybox.image" rel="group"><img id="alipay_qr" src="http://ooa3lxrpg.bkt.clouddn.com/zfb.jpg?imageView2/2/w/180" alt="cc Alipay"></a>
-                        <p>支付宝打赏</p>
-                    </div>
-
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div>
-
-
-
-
-        </div>
-
-        <footer class="post-footer">
-
-            <div class="post-tags">
-
-                <a href="/tags/hexo/" rel="tag"># hexo</a>
-
-                <a href="/tags/next/" rel="tag"># next</a>
-
-            </div>
-
-
-
-
-
-
-
-            <div class="post-nav">
-                <div class="post-nav-next post-nav-item">
-
-                    <a href="/2017/03/12/hexo个人博客搭建/" rel="next" title="hexo个人博客搭建">
-                        <i class="fa fa-chevron-left"></i> hexo个人博客搭建
-                    </a>
-
-                </div>
-
-                <span class="post-nav-divider"></span>
-
-                <div class="post-nav-prev post-nav-item">
-
-                </div>
-            </div>
-
-
-
-
-        </footer>
-    </article>
 </div>
-<div id="cc-content-title"></div>
+<div id="warehouse"></div>
+<div style="height:500px"></div>
+</div>
 </body>
 <script>
     window.onload=function(){
-        var tit=new GetTitle();
-        tit.__init();
+        var __warehouse=document.getElementById('warehouse');
+        var __content=document.getElementById('vvv');
+        var cus={
+            'title':'none',
+            'article':__content,
+        };
+        __warehouse.__newCc(cus);
     };
-    function GetTitle(){
-        this.__warehouse=document.getElementById('cc-content-title');
-        this.__content=document.getElementById('vvv');
-        this.__hs=null;//所有__warehouse中的标题节点
-        this.__cHs=[];//所有文章中的标题节点
-        this.__cHsDistance=[];//所有文章中的标题节点离顶端的距离
-        this.__hierarchy=[];//层级
-        this.__maxScroll=document.documentElement.offsetHeight-document.documentElement.clientHeight;//最大滚动距离
-    }
-    GetTitle.prototype={
-        //初始化
-        '__init':function(){
-            this.__getH();
-            this.__setHStyle();
-            this.__setClick(this);
-            this.__setScrollEven(this);
-            if(this.__maxScroll<=0){
-                for(var i=0;i<this.__hs.length;i++){
-                    this.__hs[i].style.display='block';
+    ;(function(){
+        var GetTitle=function(cus,thi){
+            this.def={//默认属性
+                'title':'block',//是否显示标题（block|none(默认)）
+                'article':'',//要获取标题列表的内容区域节点
+                'font':{
+                    'size':'14px',
+                    'color':'#666',
+                    'marginTB':'15px',
+                    'paddingLStep':'30',
+                    'scrollColor':'#f38c7b'//滚动到位置的标题颜色（#fff(默认)）
+                },
+                'hBef':'on',
+                'hBefStyle':{
+                    'fillet':'2px',
+                    'width':'5px',
+                    'height':'5px',
+                    'color':['#4045FC','#ecada2','#a5e6a7','#b958fc','#59fcae']
+                },
+                'speed':200,
+                'warehouse':{
+                    'bgcolor':'#fff',
+                    'width':'250px',
+                    'borderWidth':'1px',
+                    'borderStyle':'solid',
+                    'borderColor':'#999',
+                    'padding':'10px',
+                    'fillet':'5px',
+                    'top':'10px'
+                },
+                'startDisplay':'block'
+            };
+            this.merge=this.__merge({},this.def,cus);
+            this.__warehouse=thi;//要存放的标题仓库节点
+            this.__styleDiv=null;//设置样式的div
+            this.__content= this.merge.article;//内容区域节点
+            this.__hs=null;//所有__warehouse中的标题节点
+            this.__cHs=[];//所有文章中的标题节点
+            this.__cHsDistance=[];//所有文章中的标题节点离顶端的距离
+            this.__hierarchy=[];//层级
+            this.__maxScroll=document.documentElement.offsetHeight-document.documentElement.clientHeight;//最大滚动距离
+        };
+        GetTitle.prototype={
+            //初始化
+            '__init':function(){
+                this.__getH();//内容初始化
+                this.__setHStyle();//层级初始化
+                this.__setClick(this);//点击事件初始化
+                this.__setScrollEven(this);//滚动事件初始化
+                this.__setStyle();//样式初始化
+                //判断内容区域高度和可是区域高度
+                if(this.__maxScroll<=0){
+                    for(var i=0;i<this.__hs.length;i++){
+                        this.__hs[i].style.display='block';
+                    }
                 }
-            }
-        },
-        //获取到标题
-        '__getH':function(){
-            //思路：先取得文章的所有内容（包括标签），然后把所有换行去掉，在在</h>后面加上换行，最后同过正则reg获得所有h的集合
-            var removen=/\n/ig;//过滤掉换行
-            var replacens=[/<\/h1>/ig,/<\/h2>/ig,/<\/h3>/ig,/<\/h4>/ig,/<\/h5>/ig,/<\/h6>/ig];//后面加换行
-            var removeId=/(id="[^<]+"|<a[^<]+>|<\/a>)/ig;//过滤除了h标签和标题之外的所有字符串
-            var reg=/<h[1-6][^<]{0,}>(.)+<\/h[1-6]>/ig;//找到h标签
-            var hStr=this.__content.innerHTML.replace(removen,'');
-            //</h>后加换行
-            for(var i=0;i<6;i++){
-                hStr=hStr.replace(replacens[i],'</h'+(i+1)+'>\n')
-            }
-            this.__warehouse.innerHTML=hStr.match(reg).join('').replace(removeId,'');
-        },
-        //设置标题层级
-        '__setHStyle':function(){
-            var wTags=this.__hs=this.__warehouse.getElementsByTagName('*');
-            var ifH=[false,false,false,false,false,false];//设置h1-h6的状态，初始为false,代表获取的标签没有相应的标签
-            //循环所有标签拥有相应标签就把ifH的相应位置设为true
-            for(var i=0;i<wTags.length;i++){
-                switch(wTags[i].tagName.toLowerCase()){
-                    case 'h1':ifH[0]=true;
-                        break;
-                    case 'h2':ifH[1]=true;
-                        break;
-                    case 'h3':ifH[2]=true;
-                        break;
-                    case 'h4':ifH[3]=true;
-                        break;
-                    case 'h5':ifH[4]=true;
-                        break;
-                    case 'h6':ifH[5]=true;
-                        break;
+                this.__scroll();
+
+            },
+            //样式初始化
+            '__setStyle':function(){
+                for(var j=0;j<this.__hs.length;j++){
+                    this.__hs[j].style.color=this.merge.font.color;
+                    this.__hs[j].style.marginTop=this.__hs[j].style.marginBottom=this.merge.font.marginTB;
+                    this.__hs[j].style.fontSize=this.merge.font.size;
+                    if(this.merge.title=='block'){
+                        this.__hs[j].style.marginTop=(j==0&&0);
+                    }else{
+                        this.__hs[j].style.marginTop=(j==1&&0);
+                    }
+                    this.__hs[j].style.marginBottom=(j==this.__hs.length-1&&0);
                 }
-            }
-            //获取到有哪些h标签,存到数组,主要用来表示层级，数组下标0的位置存放的h标签表示第一级
-            for(var j=0;j<ifH.length;j++){
-                if(ifH[j]){
-                    this.__hierarchy.push(j+1);
+                if(this.merge.startDisplay=='hidden'){
+                    this.__styleDiv.style.display='none';
                 }
-            }
-            var hs=this.__hierarchy;
-            for(var b=0;b<wTags.length;b++) {
-                for (var a = 0; a < hs.length; a++) {//主要用来判断属于哪个层级
-                    if(wTags[b].tagName.indexOf(hs[a])!=-1){
-                        wTags[b].style.marginLeft=a*10+'px';
-                        if(a>1){
-                            wTags[b].style.display='none';
+                if(this.merge.hBef=='on'){
+                    var styleStr='#'+this.__warehouse.id+' h2:before,'+
+                        '#'+this.__warehouse.id+' h3:before,'+
+                        '#'+this.__warehouse.id+' h4:before,'+
+                        '#'+this.__warehouse.id+' h5:before,'+
+                        '#'+this.__warehouse.id+' h6:before{'+
+                        ///////////////////////
+                        'content:"";'+
+                        'display:inline-block;'+
+                        'width:'+this.merge.hBefStyle.width+';'+
+                        'height:'+this.merge.hBefStyle.height+';'+
+                        'vertical-align:middle;'+
+                        'margin-right:10px;'+
+                        '-webkit-border-radius:'+this.merge.hBefStyle.fillet+';'+
+                        '-o-border-radius:'+this.merge.hBefStyle.fillet+';'+
+                        '-moz-border-radius:'+this.merge.hBefStyle.fillet+';'+
+                        '-ms-border-radius:'+this.merge.hBefStyle.fillet+';'+
+                        'border-radius:'+this.merge.hBefStyle.fillet+';'+
+                        ////////////////////////////
+                        '}'+
+                        '#'+this.__warehouse.id+' h2:before{'+
+                        'background:'+this.merge.hBefStyle.color[0]+';'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h3:before{'+
+                        'background:'+this.merge.hBefStyle.color[1]+';'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h4:before{'+
+                        'background:lightsalmon;'+this.merge.hBefStyle.color[2]+';'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h5:before{'+
+                        'background:lightblue;'+this.merge.hBefStyle.color[3]+';'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h6:before{'+
+                        'background:gold;'+this.merge.hBefStyle.color[4]+';'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h2,'+
+                        '#'+this.__warehouse.id+' h3,'+
+                        '#'+this.__warehouse.id+' h4,'+
+                        '#'+this.__warehouse.id+' h5,'+
+                        '#'+this.__warehouse.id+' h6{'+
+                        'text-overflow:ellipsis;'+
+                        'white-space:nowrap;'+
+                        'overflow:hidden;'+
+                        'cursor:pointer;'+
+                        'font-weight:normal;'+
+                        '}'+
+                        '#'+this.__warehouse.id+' h2:hover,'+
+                        '#'+this.__warehouse.id+' h3:hover,'+
+                        '#'+this.__warehouse.id+' h4:hover,'+
+                        '#'+this.__warehouse.id+' h5:hover,'+
+                        '#'+this.__warehouse.id+' h6:hover{'+
+                        'text-decoration:underline;'+
+                        '}'+
+                        '#'+this.__warehouse.id+'{' +
+                        '}'+
+                        '.cc-content-title{' +
+                        'background-color:'+this.merge.warehouse.bgcolor+';'+
+                        'width:'+this.merge.warehouse.width+';'+
+                        'padding:'+this.merge.warehouse.padding+';'+
+                        'border:'+this.merge.warehouse.borderWidth+' '+this.merge.warehouse.borderStyle+' '+this.merge.warehouse.borderColor+';'+
+                        'top:'+this.merge.warehouse.top+';'+
+                        '-webkit-border-radius:'+this.merge.warehouse.fillet+';'+
+                        '-o-border-radius:'+this.merge.warehouse.fillet+';'+
+                        '-moz-border-radius:'+this.merge.warehouse.fillet+';'+
+                        '-ms-border-radius:'+this.merge.warehouse.fillet+';'+
+                        'border-radius:'+this.merge.warehouse.fillet+';'+
+                        '}'+
+                        '.cc-content-title>div{' +
+                        'text-align:center;'+
+                        '}';
+                    var sty=document.head.getElementsByTagName('style')[0];
+                    if(sty) {
+                        styleStr += sty.innerHTML;
+                        sty.innerHTML=styleStr;
+                    }else{
+                        var __styleDom=document.createElement('style');
+                        __styleDom.innerHTML=styleStr;
+                        document.head.appendChild(__styleDom);
+                    }
+                }
+            },
+            //获取到标题
+            '__getH':function(){
+                //思路：先取得文章的所有内容（包括标签），然后把所有换行去掉，在在</h>后面加上换行，最后同过正则reg获得所有h的集合
+                var removen=/\n/ig;//过滤掉换行
+                var replacens=[/<\/h1>/ig,/<\/h2>/ig,/<\/h3>/ig,/<\/h4>/ig,/<\/h5>/ig,/<\/h6>/ig];//后面加换行
+                var removeId=/(\s\w+="[^<]+"|<[^h/][^1-6h]?[^<]+>|<\/[^h][^1-6]?>)/ig;//过滤除了h标签和标题之外的所有字符串
+                var reg=/<h[1-6][^<]{0,}>(.)+<\/h[1-6]>/ig;//找到h标签
+                var hStr=this.__content.innerHTML.replace(removen,'');
+                //</h>后加换行
+                for(var i=0;i<6;i++){
+                    hStr=hStr.replace(replacens[i],'</h'+(i+1)+'>\n')
+                }
+                console.log(hStr.match(reg).join('').replace(removeId,''));
+                this.__warehouse.innerHTML='<div class="cc-content-title">'+(hStr.match(reg).join('').replace(removeId,'').replace(/<h1>/i,'<div>').replace(/<\/h1>/i,'</div>'))+'</div>';
+            },
+            //设置标题层级
+            '__setHStyle':function(){
+                this.__styleDiv=this.__warehouse.getElementsByClassName('cc-content-title')[0];
+                var wTags=this.__hs=this.__styleDiv.getElementsByTagName('*');
+                var ifH=[true,false,false,false,false,false];//设置h1-h6的状态，初始为false,代表获取的标签没有相应的标签
+                //循环所有标签拥有相应标签就把ifH的相应位置设为true
+                for(var i=0;i<wTags.length;i++){
+                    switch(wTags[i].tagName.toLowerCase()){
+                        case 'h2':ifH[1]=true;
+                            break;
+                        case 'h3':ifH[2]=true;
+                            break;
+                        case 'h4':ifH[3]=true;
+                            break;
+                        case 'h5':ifH[4]=true;
+                            break;
+                        case 'h6':ifH[5]=true;
+                            break;
+                    }
+                }
+                //获取到有哪些h标签,存到数组,主要用来表示层级，数组下标0的位置存放的h标签表示第一级
+                for(var j=0;j<ifH.length;j++){
+                    if(ifH[j]){
+                        this.__hierarchy.push(j+1);
+                    }
+                }
+                var hs=this.__hierarchy;
+                var tit=this.merge.title;
+                wTags[0].style.display=(tit=='block'||tit=='none')?tit:'none';
+                for(var b=0;b<wTags.length;b++) {
+                    for (var a = 0; a < hs.length; a++) {//主要用来判断属于哪个层级
+                        if(wTags[b].tagName.indexOf(hs[a])!=-1){
+                            wTags[b].style.marginLeft=(a-1)*this.merge.font.paddingLStep+'px';
+                            wTags[b].style.display=(a>1&&'none');
                         }
                     }
                 }
-            }
-        },
-        //设置标题滚动到位置的点击事件
-        '__setClick':function(__this){
-            var cTags=__this.__content.getElementsByTagName('*');
-            var whs=__this.__hs;
-            var regH=/^h[1-6]$/i;
-            //获取文章中所有标题节点
-            for(var j=0;j<cTags.length;j++){
-                var cTag=cTags[j].tagName;
-                if(cTag.search(regH)==0){
-                    __this.__cHs.push(cTags[j]);
-                }
-            }
-            //把标题在文章中的距离存储起来，方便下次使用
-            for(var a=0;a<__this.__cHs.length;a++){
-                __this.__cHsDistance.push(__this.__getDisRelativeBrowser(__this.__cHs[a]));
-            }
-            //添加点击事件
-            for(var i=0;i<whs.length;i++){
-                (function(i){
-                    whs[i].onclick=function(){
-                        var thi=this;
-                        var timer=setInterval(function(){
-                            __this.__setScrollTop(__this.__cHsDistance[i],timer);
-                        },20);
+            },
+            //设置标题滚动到位置的点击事件
+            '__setClick':function(__this){
+                var cTags=__this.__content.getElementsByTagName('*');
+                var whs=__this.__hs;
+                var regH=/^h[1-6]$/i;
+                //获取文章中所有标题节点
+                for(var j=0;j<cTags.length;j++){
+                    var cTag=cTags[j].tagName;
+                    if(cTag.search(regH)==0){
+                        __this.__cHs.push(cTags[j]);
                     }
-                })(i);
-            }
+                }
+                //把标题在文章中的距离存储起来，方便下次使用
+                for(var a=0;a<__this.__cHs.length;a++){
+                    __this.__cHsDistance.push(__this.__getDisRelativeBrowser(__this.__cHs[a]));
+                }
+                //添加点击事件
+                for(var i=0;i<whs.length;i++){
+                    (function(i){
+                        whs[i].onclick=function(){
+                            var thi=this;
+                            var timer=setInterval(function(){
+                                __this.__setScrollTop(__this.__cHsDistance[i],timer);
+                            },20);
+                        }
+                    })(i);
+                }
 
-        },
-        //设置滚动事件
-        '__setScrollEven':function(__this){
-            window.onscroll=function(){
+            },
+            //设置滚动事件
+            '__setScrollEven':function(__this){
+                window.onscroll=function(){
+                    __this.__scroll();
+                }
+            },
+            '__scroll':function(){
+                var tit=this.merge.title;
                 var scrtop=document.documentElement.scrollTop||document.body.scrollTop;
-                var  chsdis=__this.__cHsDistance;//存储滚动距离
-                for(var i=0;i<chsdis.length;i++){
-                    if(chsdis[i]>=__this.__maxScroll){//假如滚动距离超过最大滚动距离那就设为最大
-                        chsdis[i]=__this.__maxScroll;
+                var  chsdis=this.__cHsDistance;//存储滚动距离
+                var maxnum=0;
+                if(scrtop>=chsdis[0]){
+                    if(this.merge.startDisplay=='hidden'){
+                        this.__styleDiv.style.display='block';
+                    }
+                    this.__styleDiv.style.position='fixed';
+                }else{
+                    if(this.merge.startDisplay=='hidden'){
+                        this.__styleDiv.style.display='none';
+                    }
+                    this.__styleDiv.style.position='static';
+                }
+                for(var i=1;i<chsdis.length;i++){
+                    if(chsdis[i]>=this.__maxScroll){//假如滚动距离超过最大滚动距离那就设为最大
+                        chsdis[i]=this.__maxScroll;
                     }
                     if(scrtop>=chsdis[i]){
-                        __this.__hs[i].style.display='block';//不加的话，如果滚动步长，速度太快o方法会有部分标签跳过不会执行
-                        var maxnum=i;//获得滚动到哪个h标签的下标，当前标签
+                        this.__hs[i].style.display='block';//不加的话，如果滚动步长，速度太快o方法会有部分标签跳过不会执行
+                        this.__hs[0].style.display=(tit=='block'||tit=='none')?tit:'none';
+                        if(chsdis[maxnum]==chsdis[i]){
+                            maxnum=maxnum;
+                        }else{
+                            maxnum=i;//获得滚动到哪个h标签的下标，当前标签
+                        }
                     }else{
-                        var h=__this.__hs[i].tagName.substring(1,2);//获得h标签的数字1-6
-                        if(h!=__this.__hierarchy[1]){//除了第2级标签
-                            __this.__hs[i].style.display='none';
+                        var h=this.__hs[i].tagName.substring(1,2);//获得h标签的数字1-6
+                        if(h!=this.__hierarchy[1]){//除了第2级标签
+                            this.__hs[i].style.display='none';
                         }
                     }
                 }
-                o(__this.__hs[maxnum]);
+                o(this.__hs[maxnum]);
                 for(var a=0;a<chsdis.length;a++){
-                    __this.__hs[a].style.color='#333';
+                    this.__hs[a].style.color=this.merge.font.color;
                 }
-                __this.__hs[maxnum].style.color='#fff';
+                this.__hs[maxnum].style.color=this.merge.font.scrollColor;//设置滚动标题的字体颜色
                 //滚动结束查看他是否有子级或同级，有的话显示
                 function o(thi){
-                    if(thi.nextElementSibling){
+                    if(thi.tagName!='div'&&thi.nextElementSibling){
                         var ne=thi.nextElementSibling;
                         if(thi.tagName<=ne.tagName){
                             ne.style.display='block';
@@ -857,31 +567,27 @@
                         }
                     }
                 }
-                /*for(var j=0;j<chsdis.length;j++){
-                    if(scrtop-chsdis[j])
-                }*/
-            }
-        },
-        //获取元素顶端的距离
-        '__getDisRelativeBrowser':function(__do){
-            var dis=0;
-            while(__do.offsetParent){
-                dis+=__do.offsetTop;
-                __do=__do.offsetParent;
-            }
-            return dis;
-        },
-        //设置滚动
-        '__setScrollTop':function(num,tim){
+            },
+            //获取元素顶端的距离
+            '__getDisRelativeBrowser':function(__do){
+                var dis=0;
+                while(__do.offsetParent){
+                    dis+=__do.offsetTop;
+                    __do=__do.offsetParent;
+                }
+                return dis;
+            },
+            //设置滚动
+            '__setScrollTop':function(num,tim){
                 var scrtop=document.documentElement.scrollTop||document.body.scrollTop;
                 var maxScrollTop=this.__maxScroll;
                 if(num>=maxScrollTop) num=maxScrollTop;
                 if(num>scrtop){
-                        addStep(200);
-                        scrtop>=num&&clear();
+                    addStep(this.merge.speed);
+                    scrtop>=num&&clear();
                 }else{
-                        addStep(-200);
-                        scrtop<=num&&clear();
+                    addStep(-this.merge.speed);
+                    scrtop<=num&&clear();
                 }
                 function addStep(step){
                     document.documentElement.scrollTop
@@ -895,7 +601,28 @@
                         ?document.documentElement.scrollTop=num
                         :document.body.scrollTop=num;
                 }
+            },
+            //合并默认和自定义属性
+            '__merge':function(mer,def,cus){//合并，默认，自定义
+                if(!cus||JSON.stringify(cus)=='{}'){
+                    return def;
+                }
+                for(var d in def){
+                    for(var c in cus){
+                        mer[d]=(c==d?cus[c]:def[d]);
+                    }
+                }
+                return mer;
             }
-    }
+        };
+        Element.prototype.__newCc=function(cus){
+            var titleList=new GetTitle(cus,this);
+            titleList.__init();
+        };
+        HTMLCollection.prototype.__newCc=function(cus){
+            var titleList=new GetTitle(cus,this);
+            titleList.__init();
+        };
+    })();
 </script>
 </html>
